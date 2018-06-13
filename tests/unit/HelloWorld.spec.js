@@ -9,4 +9,9 @@ describe("HelloWorld.vue", () => {
     });
     expect(wrapper.text()).toMatch(msg);
   });
+  it("looks for default message when nothing passed", () => {
+    const msg = "default msg";
+    const wrapper = shallowMount(HelloWorld);
+    expect(wrapper.text()).toMatch(msg);
+  });
 });

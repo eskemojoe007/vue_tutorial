@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <h1>{{ price }}</h1>
+    <h1 id='price'>{{ price }}</h1>
     <button @click="increasePrice(100)">Add 100</button>
   </div>
 </template>
@@ -10,7 +10,7 @@
 export default {
   props: {
     msg: {
-      default: "Default Eth",
+      default: "default ether",
       type: String
     }
   },
