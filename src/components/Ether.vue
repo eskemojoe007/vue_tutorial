@@ -15,15 +15,14 @@ export default {
     }
   },
 
-  data: function () {
-    return {price: 200}
+  data: function() {
+    return { price: 200 };
   },
 
-  methods:{
-    increasePrice: function (amount) {
-      this.price += amount
+  methods: {
+    increasePrice: function(amount) {
+      this.price += amount;
     }
   }
-
-}
+};
 </script>
