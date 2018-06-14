@@ -3,18 +3,24 @@
     <img src="./assets/logo.png">
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <Ether msg="What up Player?"/>
+    <Form/>
+    <Computed/>
   </div>
 </template>
 
 <script>
 import HelloWorld from "./components/HelloWorld.vue";
 import Ether from "./components/Ether.vue";
+import Form from "./components/Form.vue";
+import Computed from "./components/Computed.vue";
 
 export default {
   name: "App",
   components: {
     HelloWorld,
-    Ether
+    Ether,
+    Form,
+    Computed
   }
 };
 </script>

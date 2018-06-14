@@ -39,4 +39,23 @@ describe("Ether.vue", () => {
       (price + price_up * 2).toString()
     );
   });
+  it("Test the max values of truncated_price", () => {
+    const limit = 1000;
+    expect(wrapper.vm.price).toBe(200);
+    wrapper.vm.increasePrice(200);
+    expect(wrapper.vm.price).toBe(400);
+    expect(wrapper.find("#price").text()).toBe((400).toString());
+    wrapper.vm.increasePrice(500);
+    expect(wrapper.vm.price).toBe(900);
+    expect(wrapper.find("#price").text()).toBe((900).toString());
+    wrapper.vm.increasePrice(100);
+    expect(wrapper.vm.price).toBe(1000);
+    expect(wrapper.find("#price").text()).toBe((1000).toString());
+    wrapper.vm.increasePrice(100);
+    expect(wrapper.vm.price).toBe(1100);
+    expect(wrapper.find("#price").text()).toBe(limit.toString());
+    wrapper.vm.increasePrice(500);
+    expect(wrapper.vm.price).toBe(1600);
+    expect(wrapper.find("#price").text()).toBe(limit.toString());
+  });
 });
