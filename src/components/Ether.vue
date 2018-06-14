@@ -10,25 +10,25 @@
 export default {
   props: {
     msg: {
-      default: "default ether",
-      type: String
-    }
+      default: 'default ether',
+      type: String,
+    },
   },
 
-  data: function() {
+  data() {
     return { price: 200 };
   },
 
   computed: {
-    truncated_price: function() {
+    truncated_price() {
       return this.price > 1000 ? 1000 : this.price;
-    }
+    },
   },
 
   methods: {
-    increasePrice: function(amount) {
+    increasePrice(amount) {
       this.price += amount;
-    }
-  }
+    },
+  },
 };
 </script>

@@ -12,9 +12,9 @@ export default {
     return { counter: 0 };
   },
   computed: {
-    view: function() {
+    view() {
       return this.counter < 0 ? 0 : this.counter;
-    }
-  }
+    },
+  },
 };
 </script>

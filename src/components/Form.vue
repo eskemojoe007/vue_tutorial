@@ -27,11 +27,11 @@
 
 <script>
 export default {
-  data: function() {
+  data() {
     return {
-      name: "",
-      email: ""
+      name: '',
+      email: '',
     };
-  }
+  },
 };
 </script>

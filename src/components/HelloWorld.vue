@@ -55,13 +55,13 @@
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: 'HelloWorld',
   props: {
     msg: {
-      default: "default msg",
-      type: String
-    }
-  }
+      default: 'default msg',
+      type: String,
+    },
+  },
 };
 </script>
 

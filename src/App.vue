@@ -9,19 +9,19 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-import Ether from "./components/Ether.vue";
-import Form from "./components/Form.vue";
-import Computed from "./components/Computed.vue";
+import HelloWorld from './components/HelloWorld.vue';
+import Ether from './components/Ether.vue';
+import Form from './components/Form.vue';
+import Computed from './components/Computed.vue';
 
 export default {
-  name: "App",
+  name: 'App',
   components: {
     HelloWorld,
     Ether,
     Form,
-    Computed
-  }
+    Computed,
+  },
 };
 </script>
 
